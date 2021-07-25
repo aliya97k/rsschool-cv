@@ -1,0 +1,241 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+header {
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #EFF5F5;
+    line-height: 25px;
+    left: 280px;
+    width: 800px;
+    height: 310px;
+}
+.photo {
+    position: absolute;
+    width: 318px;
+    height: 240px;
+    left: 430px;
+    top: 40px;
+    border-radius: 126px;
+}
+h1 
+{
+    padding: 16px;
+    margin: 16px;
+    position: absolute;
+    font-size: 40px;
+    line-height: 30px;
+}   
+h3 
+{
+    position: absolute;
+    left: 30px;
+    top: 70px;
+    font-size: 30px;
+    line-height: 32px;    
+    background: -webkit-linear-gradient(135deg, #129F8E 0%, #0E6976 47.92%, #370FDB 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#personal_info 
+{
+    position: absolute;
+    width: 342px;
+    height: 29px;
+    left: 30px;
+    top: 120px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 16px;
+}
+.contact_info 
+{
+    display: flex;
+}
+.contactinfo1
+{
+    list-style-type: none;
+}
+img {
+    position: absolute;
+    width: 30px;
+    left: 30px;
+    top: 225px;
+}
+.email {
+    position: absolute;
+    width: 30px;
+    left: 65px;
+    top: 225px;
+    font-size: 18px;
+}
+.github {
+    position: absolute;
+    width: 30px;
+    left: 30px;
+    top: 255px; 
+}
+.github_page {
+    position: absolute;
+    width: 30px;
+    left: 65px;
+    top: 258px;
+    font-size: 18px;
+}
+.main_info
+{
+    position: absolute;
+    width: 450px;
+    padding: 20px 50px 20px 20px;
+    left: 289px;
+    line-height: 28px;
+}
+.education
+{
+    font-size: 24px;
+    color: black;
+    font-style: normal;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.year {
+    font-weight: normal;
+    font-size: 20px;
+    font-weight: bold;
+    background: -webkit-linear-gradient(135deg, #129F8E 0%, #0E6976 47.92%, #370FDB 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.University {
+    font-size: 18px;
+    color: black;
+    font-style: normal;
+    font-weight: normal;
+}
+.degree {
+    font-size: 18px;
+    color: black;
+    font-style: italic;
+    font-weight: normal;
+}
+#courses
+{
+    font-size: 24px;
+    color: black;
+    font-style: normal;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.course1 {
+    font-size: 18px;
+    color: black;
+    font-style: normal;
+    font-weight: normal;
+}
+.course1_info {
+    font-size: 18px;
+    color: black;
+    font-style: italic;
+    font-weight: normal;
+}
+.course2 {
+    font-size: 18px;
+    color: black;
+    font-style: normal;
+    font-weight: normal;
+}
+.course2_info {
+    font-size: 18px;
+    color: black;
+    font-style: italic;
+    font-weight: normal;
+}
+.course3 {
+    font-size: 18px;
+    color: black;
+    font-style: normal;
+    font-weight: normal;
+}
+.course3_info 
+{
+    font-size: 18px;
+    color: black;
+    font-style: italic;
+    font-weight: normal;
+}
+.sidebar {
+    position: absolute;
+    width: 300px;
+    padding: 20px 50px 20px 20px;
+    left: 780px;
+    line-height: 28px;
+}
+#Skills {
+    margin-bottom: 5px;
+}
+.Language {
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+.list {
+    list-style: none;
+}
+.list2 {
+    list-style: none;
+}
+.footer {
+    position: relative;
+    background-color: #EFF5F5;
+    width: 800px;
+    height: 50px;
+    left: 280px;
+    top: 570px;
+}
+.github1
+{
+    position: absolute;
+    width: 30px;
+    left: 15px;
+    top: 10px; 
+}
+.github_page1 
+{
+    position: absolute;
+    width: 30px;
+    left: 50px;
+    top: 14px;
+    font-size: 18px;    
+}
+.footerinfoyear
+{
+    position: absolute;
+    width: 300px;
+    left: 318px;
+    top: 14px;
+    font-weight: bold;
+    font-size: 18px; 
+}
+.logo
+{
+    position: absolute;
+    width: 70px;
+    left: 630px;
+    top: 15px;
+    height: 21px; 
+}
+.rsschool_page
+{
+    position: absolute;
+    width: 300px;
+    left: 700px;
+    top: 15px;
+    font-weight: bold;
+    font-size: 18px; 
+}
