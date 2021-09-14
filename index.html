@@ -5,94 +5,212 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV</title>
     <link rel="stylesheet" href="style.css">
-  </head>
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/github-dark.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    </head>
   <body>
+    <div class="wrapper">
       <header>
-        <div class="title">
-          <h1>Aliya Kussainova</h1>
-          <h3>Frontend developer</h3> 
-          <img class="photo" src="photo.jpg" alt="avatar">
-          <p id="personal_info">Currently, I am eager to become a frontend developer. Despite no experience in this field, I am hardworking, highly inquisitive and responsible person, who can work as a team player as individually.</p>
+         <div class="navigation">
+          <nav class="navigation_container">
+            <ul class="nav_items">
+              <li class="nav_item">
+                <a class="nav_link" href="#education">EDUCATION</a>
+              </li>
+              <li class="nav_item">
+                <a class="nav_link" href="#courses">COURSES</a>
+              </li>
+              <li class="nav_item">
+                <a class="nav_link" href="#projects">MY PROJECTS</a>
+              </li>
+              <li class="nav_item">
+                <a class="nav_link" href="#code_example">MY CODE EXAMPLE</a>
+              </li>
+            </ul>
+          </nav>
+        </div> 
+        <aside class="right_block"></aside>
+      </header>
+      <main class="main">
+        <div class="main_container">
+            <section class="about_me">
+              <div class="title">
+                <h1>Aliya Kussainova</h1>
+                <h3>Frontend developer</h3> 
+                <p id="personal_info">Currently, I am eager to become a frontend developer. Despite no experience in this field, I am hardworking, highly inquisitive and responsible person, who can work as a team player as individually.</p>
+              </div>
+            </section>
+            <section class="education" id="education">
+              <div class="education_container">
+                 <h2 class="education_title">Education</h2>
+                 <p class="year">2015-2019</p> 
+                 <p class="University">Academician Y.A. Buketov Karaganda University, Karaganda (Kazakhstan)</p>
+                 <p class="degree">Bachelor of Economy and Business in World economy</p>
+                 <p class="year">2019-2021</p> 
+                 <p class="University">Academician Y.A. Buketov Karaganda University, Karaganda (Kazakhstan)</p>
+                 <p class="degree">Master of Economic Sciences in Business administration</p>
+              </div>
+            </section>
+            <section class="courses" id="courses">
+              <div class="courses_container">
+                 <h2 class="course border">Courses</h2>
+                 <p class="course_title">Visual Elements of User Interface Design</p>
+                 <p class="course_info">Coursera</p>
+                 <p class="course_title">Become a UX Designer from Scratch</p>
+                 <p class="course_info">Certificate from Interaction Design Foundation</p>
+                 <p class="course_title">Code Basics</p>
+                 <p class="course_info">HTML, CSS</p>
+                 <p class="course_title">JS/FE PRE-SCHOOL (JAVASCRIPT)</p>
+                 <p class="course_info">Certificate from THE ROLLING SCOPES
+                  SCHOOL</p>
+              </div>
+            </section>
+            <section class="project_container" id="projects">
+              <div class="projects_item">
+                <h2 class="projects border">My Projects</h2>
+                <article class="project1_container">
+                  <div class="left_column">
+                    <h4 class="project_title">Louvre Museum Landing Page (HTML, CSS)</h4>
+                    <p class="project_subtext">The landing page was made during the RS school course</p>
+                    <a href="https://rolling-scopes-school.github.io/aliya97k-JSFEPRESCHOOL/museum/" class="link" target="_blank"></a>
+                  </div>
+                  <div class="right_column">
+                    <img src="./assets/img/Louvre.JPG" alt="Louvre" width="210" height="200" class="museum">
+                  </div>
+                </article>
+                <article class="project1_container">
+                  <div class="left_column">
+                    <h4 class="project_title">Custom video player (HTML, CSS, JAVASCRIPT)</h4>
+                    <p class="project_subtext">The project was made during the RS school course</p>
+                    <a href="https://rolling-scopes-school.github.io/aliya97k-JSFEPRESCHOOL/custom-video-player/" class="link" target="_blank"></a>
+                  </div>
+                  <div class="right_column">
+                    <img src="./assets/img/Custom_video_player.JPG" alt="Custom-video-player" width="210" height="200" class="custom-video-player">
+                  </div>
+                </article>
+                <article class="project1_container">
+                  <div class="left_column">
+                    <h4 class="project_title">Drum Kit (HTML, CSS, JAVASCRIPT)</h4>
+                    <p class="project_subtext">The project was made during the RS school course</p>
+                    <a href="https://rolling-scopes-school.github.io/aliya97k-JSFEPRESCHOOL/drum-kit/" class="link" target="_blank"></a>
+                  </div>
+                  <div class="right_column">
+                    <img src="./assets/img/Drum_kit.JPG" alt="Drum-kit" width="210" height="200" class="drum-kit">
+                  </div>
+                </article>
+              </div>         
+            </section>
+            <section class="code" id="code_example">
+              <div class="code_container">
+                <h2 class="border">My Code Example</h2>
+                <p class="code_info">Codewars Kata "RGB To Hex Conversion"</p>
+                <div class="code_ex">
+                  <pre>
+                    <code class="code_container">
+                      const rgb = (r, g, b) => toHex(r) + toHex(g) + toHex(b);
+
+                      function toHex(number) {
+                        if (number <= 0) return "00";
+                        if (number > 255) return "FF";
+                        return number.toString(16).padStart(2, "0").toUpperCase()
+                      };
+                    </code>
+                  </pre>
+                </div>
+              </div>
+            </section>
         </div>
-        <section class="contact_info">
-        <ul class="contactinfo1">
-          <li>
-            <div>
-              <img src="Vector.svg" alt="email">
-              <p class="email">aliyakussainova13@gmail.com</p>
-            </div> 
-          </li>
-          <li>
-            <div>
-              <img class="github" src="Vector1.svg" alt="github account">
-              <a class="github_page" href="https://github.com/aliya97k">aliya97k</a>
-            </div>
-          </li>
-        </ul>
-      </section>
-      </header>     
-      <main>
-        <section class="main_info"> 
-          <h2 class="education">Education</h2>
-          <p class="year">2015-2019</p> 
-          <p class="University">Academician Y.A. Buketov Karaganda University, Karaganda (Kazakhstan)</p>
-          <p class="degree">Bachelor of Economy and Business in World economy</p>
-          <p class="year">2019-2021</p> 
-          <p class="University">Academician Y.A. Buketov Karaganda University, Karaganda (Kazakhstan)</p>
-          <p class="degree">Master of Economic Sciences in Business administration</p>
-          <h2 id="courses">Courses</h2>
-          <p class="course1">Visual Elements of User Interface Design</p>
-          <p class="course1_info">Coursera</p>
-          <p class="course2">Become a UX Designer from Scratch</p>
-          <p class="course2_info">Certificate from Interaction Design Foundation</p>
-          <p class="course3">Code Basics</p>
-          <p class="course3_info">HTML, CSS</p>
-        </section>
-        <aside>
-          <div class="sidebar">
-            <h2 id="Skills">Skills</h2>
+        <aside class="sidebar">
+          <div class="avatar">
+            <img class="photo" src="photo.jpg" width="270" height="284" alt="avatar">
+          </div>
+          <section class="contact_info">
+            <h2 class="contacts border">Contacts</h2>
+            <ul class="contactinfo1">
+              <li class="contact_list">
+                <img class="icon" src="Vector.svg" alt="email">
+                <p class="email">aliyakussainova13@gmail.com</p> 
+              </li>
+              <li class="contact_list"> 
+                <a class="github_link" href="https://github.com/aliya97k">
+                  <img class="icon" src="Vector1.svg" alt="github account">
+                </a>
+                <a class="github_page" href="https://github.com/aliya97k">aliya97k</a>
+              </li>
+            </ul>
+          </section>
+          <section class="skills">
+            <h2 class="skill border" id="Skills">Skills</h2>
             <ul class="list">
-              <li>
+              <li class="list_info">
                 HTML
               </li>
-              <li>
+              <li class="list_info">
                 CSS 
               </li>
-              <li>
+              <li class="list_info">
+                Javasript 
+              </li>
+              <li class="list_info">
                 Git/Github
               </li>
-              <li>
+              <li class="list_info">
                 UI/UX Design 
               </li>
-              <li>
+              <li class="list_info">
                 Figma, VSCode 
               </li>
+            </ul>  
+          </section> 
+          <section class="language">
+            <h2 class="Language border">Language</h2>
+            <ul class="list">
+              <li class="list_info">
+                Kazakh (native)
+              </li>
+              <li class="list_info">
+                Russian (native)
+              </li>
+              <li class="list_info">
+                English (B2) / IELTS 6.0
+              </li>
             </ul>
-            <h2 class="Language">Language</h2>
-            <ul class="list2">
-              <li>
-                Kazakh(native)
-              </li>
-              <li>
-                Russian(native)
-              </li>
-              <li>
-                English(B2)/IELTS 6.0
-              </li>
-            </ul>
-          </div>
-        </aside>
+          </section>   
+        </aside>    
       </main>
       <footer class="footer">
-        <div class="footerinfo">
-          <img class="github1" src="Vector1.svg" alt="github account"> 
-          <a class="github_page1" href="https://github.com/aliya97k">aliya97k</a>
-        </div>  
-        <p class="footerinfoyear">© 2021 Aliya Kussainova</p>
-        <div class="rsschool">
-          <img class="logo" src="rs_school_js.svg" alt="logorsschool">
-          <a class="rsschool_page" href="https://rs.school/js/">RS School</a>
+        <div class="footer_container">
+          <div class="footerinfo">
+            <a href="https://github.com/aliya97k">
+              <img class="github1" src="Vector1.svg" alt="github account"> 
+            </a>
+            <a class="github_page1" href="https://github.com/aliya97k">aliya97k</a>
+          </div>  
+          <h5 class="footerinfoyear">© 2021 Aliya Kussainova</h5>
+          <div class="rsschool">
+            <a class="rsschool_page" href="https://rs.school/js/">
+              <img class="logo" width="60" height="40" src="rs_school_js.svg" alt="logorsschool">
+            </a>
+          </div>
         </div>
+        
+        <aside class="footer_right_block"></aside>
       </footer>
+    </div>
   </body>
 </html>
+
+<!--
+          <img class="photo" src="photo.jpg" alt="avatar">
+      </header>     
+      <main class="main">
+        <div class="main_container">
+          <section class="main_info"> 
+         <aside>
+        </aside>
+      </section>
+        </div>
+      </main>
+      -->
