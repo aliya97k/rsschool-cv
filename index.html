@@ -31,7 +31,7 @@
               </li>
             </ul>
             <button class="menu is-active">
-              <div class="bar"></div>
+              <span class="bar"></span>
             </button>  
           </nav>
         </div>   
@@ -59,7 +59,8 @@
             <h1>Aliya Kussainova</h1>
             <h3>Frontend developer</h3> 
             <p id="personal_info">Currently, I am eager to become a frontend developer. Despite no experience in this field, I am hardworking, highly inquisitive and responsible person, who can work as a team player as individually.</p>
-          </div><div class="avatar">
+          </div>
+          <div class="avatar">
             <img class="photo" src="photo.jpg" width="250" height="260" alt="avatar">
           </div>
         </div>
@@ -132,17 +133,17 @@
             <section class="code" id="code_example">
               <div class="code_container">
                 <h2 class="border">My Code Example</h2>
-                <p class="code_info">Codewars Kata "RGB To Hex Conversion"</p>
+                <p class="code_info">Codewars Kata "Lottery Ticket"</p>
                 <div class="code_ex">
                   <pre>
                     <code class="code_container">
-                      const rgb = (r, g, b) => toHex(r) + toHex(g) + toHex(b);
-
-                      function toHex(number) {
-                        if (number <= 0) return "00";
-                        if (number > 255) return "FF";
-                        return number.toString(16).padStart(2, "0").toUpperCase()
-                      };
+                      function bingo(ticket, win){
+                        if(ticket.filter(a => a[0].split('').some(b => b.charCodeAt(0) == a[1])).length >= win) {
+                          return "Winner!";
+                        } else {
+                           return "Loser!";
+                        }
+                      }
                     </code>
                   </pre>
                 </div>
@@ -208,7 +209,7 @@
         <div class="footer_container">
           <div class="footerinfo">
             <a href="https://github.com/aliya97k">
-              <img class="github1" width="20" height="20" src="/assets/img/github.svg" alt="github account"> 
+              <img class="github1" width="20" height="20" src="./assets/img/github.svg" alt="github account"> 
             </a>
             <a class="github_page1" href="https://github.com/aliya97k">aliya97k</a>
           </div>  
