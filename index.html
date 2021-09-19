@@ -4,16 +4,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV</title>
+    <link rel="cv icon" href="./assets/img/curriculum-vitae.svg">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/github-dark.min.css">
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
+    <script>hljs.highlightAll();</script>
     </head>
   <body>
     <div class="wrapper">
       <header>
-         <div class="navigation">
+        <div class="navigation">
           <nav class="navigation_container">
             <ul class="nav_items">
               <li class="nav_item">
@@ -29,19 +30,42 @@
                 <a class="nav_link" href="#code_example">MY CODE EXAMPLE</a>
               </li>
             </ul>
+            <button class="menu is-active">
+              <div class="bar"></div>
+            </button>  
           </nav>
-        </div> 
+        </div>   
         <aside class="right_block"></aside>
-      </header>
+      </header>   
+      <nav class="menu_burger is-active">
+        <ul class="menu_items">
+          <li class="menu_item">
+            <a class="menu_link" href="#education">EDUCATION</a>
+          </li>
+          <li class="menu_item">
+            <a class="menu_link" href="#courses">COURSES</a>
+          </li>
+          <li class="menu_item">
+            <a class="menu_link" href="#projects">MY PROJECTS</a>
+          </li>
+          <li class="menu_item">
+            <a class="menu_link" href="#code_example">MY CODE EXAMPLE</a>
+          </li>
+        </ul>
+      </nav>
+      <section class="about_me">
+        <div class="about-me-container">
+          <div class="title">
+            <h1>Aliya Kussainova</h1>
+            <h3>Frontend developer</h3> 
+            <p id="personal_info">Currently, I am eager to become a frontend developer. Despite no experience in this field, I am hardworking, highly inquisitive and responsible person, who can work as a team player as individually.</p>
+          </div><div class="avatar">
+            <img class="photo" src="photo.jpg" width="250" height="260" alt="avatar">
+          </div>
+        </div>
+      </section>   
       <main class="main">
         <div class="main_container">
-            <section class="about_me">
-              <div class="title">
-                <h1>Aliya Kussainova</h1>
-                <h3>Frontend developer</h3> 
-                <p id="personal_info">Currently, I am eager to become a frontend developer. Despite no experience in this field, I am hardworking, highly inquisitive and responsible person, who can work as a team player as individually.</p>
-              </div>
-            </section>
             <section class="education" id="education">
               <div class="education_container">
                  <h2 class="education_title">Education</h2>
@@ -52,7 +76,7 @@
                  <p class="University">Academician Y.A. Buketov Karaganda University, Karaganda (Kazakhstan)</p>
                  <p class="degree">Master of Economic Sciences in Business administration</p>
               </div>
-            </section>
+            </section> 
             <section class="courses" id="courses">
               <div class="courses_container">
                  <h2 class="course border">Courses</h2>
@@ -74,30 +98,33 @@
                   <div class="left_column">
                     <h4 class="project_title">Louvre Museum Landing Page (HTML, CSS)</h4>
                     <p class="project_subtext">The landing page was made during the RS school course</p>
-                    <a href="https://rolling-scopes-school.github.io/aliya97k-JSFEPRESCHOOL/museum/" class="link" target="_blank"></a>
                   </div>
                   <div class="right_column">
-                    <img src="./assets/img/Louvre.JPG" alt="Louvre" width="210" height="200" class="museum">
+                    <a href="https://rolling-scopes-school.github.io/aliya97k-JSFEPRESCHOOL/museum/" class="link" target="_blank">
+                      <img src="./assets/img/Louvre.JPG" alt="Louvre" width="210" height="200" class="museum">
+                    </a>
                   </div>
                 </article>
                 <article class="project1_container">
                   <div class="left_column">
                     <h4 class="project_title">Custom video player (HTML, CSS, JAVASCRIPT)</h4>
                     <p class="project_subtext">The project was made during the RS school course</p>
-                    <a href="https://rolling-scopes-school.github.io/aliya97k-JSFEPRESCHOOL/custom-video-player/" class="link" target="_blank"></a>
                   </div>
                   <div class="right_column">
-                    <img src="./assets/img/Custom_video_player.JPG" alt="Custom-video-player" width="210" height="200" class="custom-video-player">
+                    <a href="https://rolling-scopes-school.github.io/aliya97k-JSFEPRESCHOOL/custom-video-player/" class="link" target="_blank">
+                      <img src="./assets/img/Custom_video_player.JPG" alt="Custom-video-player" width="210" height="200" class="custom-video-player">
+                    </a>
                   </div>
                 </article>
                 <article class="project1_container">
                   <div class="left_column">
                     <h4 class="project_title">Drum Kit (HTML, CSS, JAVASCRIPT)</h4>
                     <p class="project_subtext">The project was made during the RS school course</p>
-                    <a href="https://rolling-scopes-school.github.io/aliya97k-JSFEPRESCHOOL/drum-kit/" class="link" target="_blank"></a>
                   </div>
                   <div class="right_column">
-                    <img src="./assets/img/Drum_kit.JPG" alt="Drum-kit" width="210" height="200" class="drum-kit">
+                    <a href="https://rolling-scopes-school.github.io/aliya97k-JSFEPRESCHOOL/drum-kit/" class="link" target="_blank">
+                      <img src="./assets/img/Drum_kit.JPG" alt="Drum-kit" width="210" height="200" class="drum-kit">
+                    </a>
                   </div>
                 </article>
               </div>         
@@ -123,9 +150,6 @@
             </section>
         </div>
         <aside class="sidebar">
-          <div class="avatar">
-            <img class="photo" src="photo.jpg" width="270" height="284" alt="avatar">
-          </div>
           <section class="contact_info">
             <h2 class="contacts border">Contacts</h2>
             <ul class="contactinfo1">
@@ -184,33 +208,21 @@
         <div class="footer_container">
           <div class="footerinfo">
             <a href="https://github.com/aliya97k">
-              <img class="github1" src="Vector1.svg" alt="github account"> 
+              <img class="github1" width="20" height="20" src="/assets/img/github.svg" alt="github account"> 
             </a>
             <a class="github_page1" href="https://github.com/aliya97k">aliya97k</a>
           </div>  
           <h5 class="footerinfoyear">© 2021 Aliya Kussainova</h5>
           <div class="rsschool">
             <a class="rsschool_page" href="https://rs.school/js/">
-              <img class="logo" width="60" height="40" src="rs_school_js.svg" alt="logorsschool">
+              <img class="logo" width="80" height="50" src="rs_school_js.svg" alt="logorsschool">
             </a>
           </div>
         </div>
-        
         <aside class="footer_right_block"></aside>
       </footer>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
 
-<!--
-          <img class="photo" src="photo.jpg" alt="avatar">
-      </header>     
-      <main class="main">
-        <div class="main_container">
-          <section class="main_info"> 
-         <aside>
-        </aside>
-      </section>
-        </div>
-      </main>
-      -->
