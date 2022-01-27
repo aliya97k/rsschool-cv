@@ -30,14 +30,14 @@
                 <a class="nav_link" href="#code_example">MY CODE EXAMPLE</a>
               </li>
             </ul>
-            <button class="menu is-active">
+            <button class="menu">
               <span class="bar"></span>
             </button>  
           </nav>
         </div>   
         <aside class="right_block"></aside>
       </header>   
-      <nav class="menu_burger is-active">
+      <nav class="menu_burger">
         <ul class="menu_items">
           <li class="menu_item">
             <a class="menu_link" href="#education">EDUCATION</a>
@@ -137,8 +137,8 @@
                 <div class="code_ex">
                   <pre>
                     <code class="code_container">
-                      function bingo(ticket, win){
-                        if(ticket.filter(a => a[0].split('').some(b => b.charCodeAt(0) == a[1])).length >= win) {
+                      function bingo (ticket, win) {
+                        if (ticket.filter(a => a[0].split('').some(b => b.charCodeAt(0) == a[1])).length >= win) {
                           return "Winner!";
                         } else {
                            return "Loser!";
